@@ -30,6 +30,7 @@ from countries.turkey import get_tr_etf_symbols
 from countries.saudi_arabia import get_sa_etf_symbols
 from countries.indonesia import get_id_etf_symbols
 from countries.south_africa import get_za_etf_symbols
+from countries.poland import get_pl_etf_symbols
 from filters.listing_age import passes_listing_age
 from filters.min_volume import passes_min_volume
 from filters.low_volatility import filter_low_volatility
@@ -38,7 +39,7 @@ from filters.ibkr_tradeable import filter_ibkr_tradeable
 from filters.good_universe_filter import passes_good_universe
 
 # ========== 參數設定區塊 ==========
-# 有我可以做更動的國家：每次執行前手動修改，目前支援"United States"、"Canada"、"United Kingdom"、"Germany"、"Japan"、"Australia"、"France"、"Netherlands"、"South Korea"、"Switzerland"、"Hong Kong"、"Singapore"、"India"、"Taiwan"、"Brazil"、"Mexico"、"Turkey"、"Saudi Arabia"、"Indonesia"、"South Africa"
+# 有我可以做更動的國家：每次執行前手動修改，目前支援"United States"、"Canada"、"United Kingdom"、"Germany"、"Japan"、"Australia"、"France"、"Netherlands"、"South Korea"、"Switzerland"、"Hong Kong"、"Singapore"、"India"、"Taiwan"、"Brazil"、"Mexico"、"Turkey"、"Saudi Arabia"、"Indonesia"、"South Africa"、"Poland"
 COUNTRY = "United States"
 
 UNIVERSE_PATH = "data/universe.csv"
@@ -67,6 +68,7 @@ COUNTRY_SYMBOL_FETCHERS = {
     "Saudi Arabia": get_sa_etf_symbols,
     "Indonesia": get_id_etf_symbols,
     "South Africa": get_za_etf_symbols,
+    "Poland": get_pl_etf_symbols,
 }
 
 
