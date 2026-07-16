@@ -116,7 +116,6 @@ def main():
     # 步驟2c：低波動率（整批傳入）
     remaining = filter_low_volatility(remaining)
     print(f"{len(remaining)} remaining after 'low volatility' filter")
-    print("通過低波動率篩選的代碼清單：", remaining)
 
     # 步驟2d：排除同走勢的ETF（整批傳入）
     remaining = remove_correlated_etfs(remaining)
