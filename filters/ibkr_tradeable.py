@@ -68,6 +68,9 @@ def filter_ibkr_tradeable(
             elif symbol.endswith(".MX"):
                 base_symbol = symbol[: -len(".MX")]
                 contract = Stock(base_symbol, "MEXI", "MXN")
+            elif symbol.endswith(".IS"):
+                base_symbol = symbol[: -len(".IS")]
+                contract = Stock(base_symbol, "BIST", "TRY")
             elif symbol.endswith(".TO"):
                 base_symbol = symbol[: -len(".TO")]
                 contract = Stock(base_symbol, "SMART", "CAD", primaryExchange="TSE")
